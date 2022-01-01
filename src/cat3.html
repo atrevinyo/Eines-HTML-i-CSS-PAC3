@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cameron Highlands</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200&display=swap" rel="stylesheet">
+    <link  href="/css/viewer.css" rel="stylesheet">
+    <script type="module" src="/js/eines.js"></script>
+</head>
+<body>
+
+    <header>
+        <div>
+            <a href="../index.html"><img class= "logo" src="../img/product.png" alt="logo"></a>
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="/src/categories.html">Categories</a> </li>
+                <li><a href="/src/presentacio.html">Presentació</a></li>
+                <li><a href="/src/links.html">Enllaços</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <section class="introduccio-detall">
+                <div>
+                    <h1>Kuala Lumpur</h1>
+                    <!-- <img id="imatge" src="../img/Moonrise_over_kuala_lumpur.jpg" alt="Kula Lumpur" onclick="zoomImatge('imatge')"> -->
+
+                    <picture>
+                        <source id="imatge1" media="(max-width: 480px)" srcset="../img/pexels-zukiman-mohamad-94420_portrait.jpg" onclick="zoomImatge('imatge1')">
+                        <source id="imatge2" media="(max-width: 829px)" srcset="../img/pexels-zukiman-mohamad-94420-1280px.jpg" onclick="zoomImatge('imatge2')">
+                        <source id="imatge3" media="(min-width: 830px)" srcset="../img/pexels-zukiman-mohamad-94420-1920px.jpg" onclick="zoomImatge('imatge3')">
+                        <img id="imatge4" src="../img/pexels-zukiman-mohamad-94420-1920px.jpg" alt="Kula Lumpur" onclick="zoomImatge('imatge4')">
+                    </picture>
+
+
+                    <p>Fundada el 1857, Kuala Lumpur és una ciutat relativament nova i no té una història tant rica com George Town o Malacca. Després d'uns primers anys complicats, Kuala Lumpur va començar a prosperar i va convertir en capital dels estats federats de Malàisia el 1896. La independència de Malàisia es va declarar el 1957 davant de grans multituds al que després es va anomenar Stadium Merdeka (Estadi de la Independència), i Kuala Lumpur va continuar sent la capital de la nova nació. El boom econòmic de la dècada de 1990 vaconvertir a KLen una ciutat moderna, plena de gratacels i mitjans de transport moderns.</p>
+                    <nav class="menu-detall">
+                        <ol class="llista-numerada">
+                            <li><a href="#idioma">Idioma</a> </li>
+                            <li><a href="#queveure">Què veure</a></li>
+                        </ol>
+                    </nav>
+                </div>
+            </section>
+
+            <div>
+                <section class="main-section">
+                    <section>
+                        <h2 id="idioma">Idioma</h2>
+                        <div>
+                            <p>Com era d’esperar a la capital de Malàisia, la llengua nacional és Bahasa Malaysia, és gairebé  parlada i entesa per tothom. L’anglès es parla àmpliament a les principals ciutats i pobles de Malàisia.</p>
+                            <img id="imatge5" srcset= "../img/pexels-julia-lee-640px.jpg 640w ,
+                                          ../img/pexels-julia-lee-1280px.jpg 1280w,
+                                          ../img/pexels-julia-lee-1920px.jpg 1920w" onclick="zoomImatge('imatge5')"
+                                 sizes="(max-width: 480px) 320px,
+                                        (max-width: 830px) 640px,
+                                        1280px"
+                                 src="../img/pexels-julia-lee-1920px.jpg">
+
+
+                        </div>
+                    </section>
+
+                    <section>
+                        <h2 id="queveure">Què veure</h2>
+                            <p>KL acull una increïble varietat de delícies arquitectòniques. Els edificis colonials britànics més antics es troben al centre de la ciutat i inclouen les antigues oficines de la Secretaria Colonial (actual edifici Sultan Abdul Samad) a la plaça Merdeka i l'antiga estació de ferrocarril de Kuala Lumpur. Combinen arquitectura de la Gran Bretanya i el nord d'Àfrica. A prop de la plaça Merdeka hi ha Masjid Jamek, una encantadora mesquita d'estil morisc situada en una confluència al riu Klang. La mesquita nacional, Masjid Negara, (1965) celebra les  ambicions de la recentment independent Malàisia. El monument nacional als bonics jardins del llac està inspirat en el Memorial Iwo Jima a Arlington, Virgínia. El jardí d'escultures de l'ASEAN és a prop. També es troba als jardins del llac Carcosa Seri Negara, l’antiga residència de l’alt comissari britànic, que ara alberga un hotel exclusiu i sales de te d’estil colonial. Tot i que alguns edificis del gran triangle daurat, com la torre KL, són còpies no inspirades d’altres estructures famoses, les Torres Bessones Petronas són realment meravelloses.
+                            </p>
+                            <img id="imatge6" src="../img/pexels-indra-gunawan-640px.jpg"
+                                 srcset= "../img/pexels-indra-gunawan-1280px.jpg 2x,
+                                          ../img/pexels-indra-gunawan-1920px.jpg 3x"
+                                          onclick="zoomImatge('imatge6')">
+
+
+                    </section>
+            </section>
+            <a href="#">Més informació...</a>
+            </div>
+        </article>
+    </main>
+    <footer class="peu-pagina-index">
+        <a href="https://www.uoc.edu/portal/ca/index.html"><img src="../img/uoc_masterbrand_3linies_positiu.png" alt="logo UOC"></a>
+        <nav class="menu menu-index">
+            <ul>
+                <li><a href="/src/categories.html">Categories</a> </li>
+                <li><a href="/src/presentacio.html">Presentació</a></li>
+                <li><a href="/src/links.html">Enllaços</a></li>
+            </ul>
+        </nav>
+
+    </footer>
+</body>
+</html>

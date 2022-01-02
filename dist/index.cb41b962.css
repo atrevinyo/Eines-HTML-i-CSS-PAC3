@@ -1,6 +1,7 @@
 /* GLOBALS */
 
 /* include border and padding in element width and height */
+
 * {
     /* box-sizing: border-box; */
   }
@@ -23,18 +24,16 @@ footer {
     height: 10%;
 }
 
-
 /* Mostrem els menus en block */
+
 header nav li {
     display: block;
     margin-right: 15px;
 }
 
-
 img {
     max-width: 100%;
 }
-
 
 .logo {
     /* Ajustem la mida del logo*/
@@ -47,6 +46,7 @@ Aliniem en una una fila i veticalment els elements de la capcelera:
 - Logo
 - Menú
 */
+
 header  {
 
     height: 10vh;
@@ -58,14 +58,14 @@ header  {
     justify-content: space-between;
 }
 
-
 /* Definim la imatge de fons a l'índex */
+
 .shadowboard, .main-conateiner-index {
     position: absolute;
 
     height: 100%;
     width: 100%;
-    background-image: url('../img/pexels-zukiman-mohamad-22804-1920px.webp');
+    background-image: url('pexels-zukiman-mohamad-22804-1920px.8869a443.webp');
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
@@ -84,9 +84,8 @@ header  {
 
 }
 
-
-
 /* Definim el format dels enllaços del menú */
+
 .menu ul li a  {
     text-align: center;
     color: black;
@@ -97,18 +96,18 @@ header  {
 }
 
 /* A l'index el menú es ce color blanc */
+
 .menu-index ul li a {
     color: white;
 
 }
-
-
 
 .menu ul li a:hover {
     font-style: normal;
 }
 
 /* Per mostrar els element del menu en línia */
+
 .menu ul li  {
     display: inline;
   }
@@ -123,9 +122,8 @@ footer .menu-index ul li a  {
       height: 100%;
   }
 
-
-
 /* Definim el format del lema */
+
 p.lema {
     color: white;
     font-weight: 700;
@@ -147,8 +145,8 @@ p.lema {
     /* justify-content: center; */
 }
 
-
 /* Definim el format del lema */
+
 .peu-pagina-index p {
     color: white;
     margin-top: 0px;
@@ -165,8 +163,8 @@ p.lema {
 
 }
 
-
 /* CATEGORIES */
+
 .main-conateiner-cat {
     flex:1;
     width: 70vw;
@@ -185,29 +183,31 @@ p.lema {
     /* text-align: center; */
 }
 
-
 .menu-cat ul li a  {
     color: black;
 }
 
-
 /* Format del títol */
+
 .main-conateiner-cat h1 {
     text-align: center;
     margin: 2rem;
 }
 
 /* Contenidor de totes les targetes */
+
 .cards-cat {
     margin: auto;  /*centrem el contenidor*/
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-around;
     align-items: center;
-    column-gap: 2rem; /* Marge entre files*/
+    -moz-column-gap: 2rem;
+         column-gap: 2rem; /* Marge entre files*/
 }
 
 /* Contenidor d'una targeta */
+
 .card-cat {
     display: flex;
     flex-direction: column;
@@ -219,11 +219,10 @@ p.lema {
 }
 
 /* Definim la mida de les imatges a la mida de la targeta  */
+
 .img-cat {
     max-width: 100%;
 }
-
-
 
 /* DETALL */
 
@@ -248,6 +247,7 @@ article {
     font-size: 30px;
 
 }
+
 .introduccio-detall  img {
     width: 100%;
     height: 100%;
@@ -258,12 +258,12 @@ article {
     line-height: 1.5;
 }
 
-
 .main-section h2 {
     border-bottom: 1px solid #CCC;
 }
 
 /* Per mostrar el texi i la imatge en una sola fila i dos columnes */
+
 .main-section section div {
     display: flex;
     flex-direction: column;
@@ -285,7 +285,6 @@ section img:hover {
     cursor: zoom-in;
 }
 
-
 /* LINKS */
 
 table {
@@ -294,6 +293,7 @@ table {
     width: 100%;
     /* table-layout: fixed; */
 }
+
 tbody, th, td {
     padding: 10px;
     text-align: left;
@@ -315,6 +315,7 @@ th {
 }
 
 /* Fixem la mida de les columnes */
+
 td:nth-child(1) {
     width: 20%;
 }
@@ -327,8 +328,8 @@ td:nth-child(3) {
     width: 50%;
 }
 
-
 /* Per seleccionar la primera colunna de la taula */
+
 tbody tr td:first-child{
     font-weight: bold;
 }
@@ -355,7 +356,17 @@ tbody tr td:first-child{
     stroke-width: 4;
     max-width: 200px;
     max-height: 20px;
-    animation: mou_linia 4s linear infinite alternate forwards;
+    -webkit-animation: mou_linia 4s linear infinite alternate forwards;
+            animation: mou_linia 4s linear infinite alternate forwards;
+}
+
+@-webkit-keyframes mou_linia {
+    0% {
+        transform: translate(calc(100vw - 200px), 10px)
+    }
+    100% {
+        transform: translate(0vw, 10px)
+    }
 }
 
 @keyframes mou_linia {
@@ -391,7 +402,7 @@ tbody tr td:first-child{
     }
 
     .shadowboard, .main-conateiner-index {
-        background-image: url('../img/pexels-zukiman-mohamad-22804-1280px.webp');
+        background-image: url('pexels-zukiman-mohamad-22804-1280px.6e18c1ef.webp');
      }
 
     p.lema {
@@ -450,7 +461,7 @@ footer .menu-index ul li a  {
 @media (max-width: 480px) {
 
     .shadowboard, .main-conateiner-index {
-        background-image: url('../img/pexels-zukiman-mohamad-22804-830px.webp');
+        background-image: url('pexels-zukiman-mohamad-22804-830px.798a9bca.webp');
      }
 
      article  {
@@ -484,3 +495,5 @@ footer .menu-index ul li a  {
 
 
 
+
+/*# sourceMappingURL=index.cb41b962.css.map */

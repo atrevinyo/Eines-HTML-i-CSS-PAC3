@@ -1,0 +1,557 @@
+/* GLOBALS */
+
+/* montserrat-200 - latin */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 200;
+    src: local(''),
+         url('../fonts/montserrat-v18-latin-200.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v18-latin-200.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    font-display: swap;         
+  }
+  /* montserrat-200italic - latin */
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: italic;
+    font-weight: 200;
+    src: local(''),
+         url('../fonts/montserrat-v18-latin-200italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v18-latin-200italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    font-display: swap;          
+  }
+  /* montserrat-300 - latin */
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    src: local(''),
+         url('../fonts/montserrat-v18-latin-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v18-latin-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    font-display: swap;          
+  }
+  /* montserrat-regular - latin */
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/montserrat-v18-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v18-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    font-display: swap;          
+  }
+  /* montserrat-500 - latin */
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    src: local(''),
+         url('../fonts/montserrat-v18-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v18-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    font-display: swap;          
+  }
+  /* montserrat-600 - latin */
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    src: local(''),
+         url('../fonts/montserrat-v18-latin-600.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v18-latin-600.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    font-display: swap;          
+  }
+  /* montserrat-700 - latin */
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+         url('../fonts/montserrat-v18-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v18-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    font-display: swap;          
+  }
+
+body {
+    font-family: 'Montserrat', sans-serif; /** Definim el tipus de font per a tot el document**/
+    margin: 0 auto; /** Per eliminar el margin de 8px que hi ha per defecta el body**/
+    font-size: 16px; /** Definim per defecte una mida de 14px a tot el body**/
+    width: 100vw; /** Definim l'amplada per a poder especificar el valor de l'amplada en % al fill**/
+    height: 100vh; /* Definim l'alçada per a poder especificar el valor de l'alçada en % al fill*/
+    background-color: #e8e8e8;
+
+}
+
+main {
+    /* height: 80%; */
+}
+
+footer {
+    height: 10%;
+}
+
+
+/* Mostrem els menus en block */
+header nav li {
+    display: block;
+    margin-right: 15px;
+}
+
+
+img {
+    max-width: 100%;
+}
+
+
+.logo {
+    /* Ajustem la mida del logo*/
+  max-height: 60%;
+  max-width: 60%;
+}
+
+/*
+Aliniem en una una fila i veticalment els elements de la capcelera:
+- Logo
+- Menú
+*/
+header  {
+
+    height: 10vh;
+    max-width: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+
+
+/* Definim el format dels enllaços del menú */
+.menu ul li a  {
+    text-align: center;
+    color: black;
+    font-size: 20px;
+    text-decoration: underline;
+    font-style: italic;
+    font-weight: bold;
+}
+
+/* A l'index el menú es ce color blanc */
+.menu-index ul li a {
+    color: white;
+
+}
+
+
+
+.menu ul li a:hover {
+    font-style: normal;
+}
+
+/* Per mostrar els element del menu en línia */
+.menu ul li  {
+    display: inline;
+  }
+
+footer .menu-index ul li a  {
+    font-size: 15px;
+    padding-left: 10px;
+}
+
+.bloc-principal {
+      width: 100%;
+      height: 100%;
+  }
+
+
+
+/* Definim el format del lema */
+p.lema {
+    color: white;
+    font-weight: 700;
+    font-size: 100px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+}
+
+.peu-pagina-index  {
+    width: 100%;
+    height: 20vh;
+    text-align: center;
+    font-size: 14px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10px;
+    /* justify-content: center; */
+}
+
+
+/* Definim el format del lema */
+.peu-pagina-index p {
+    color: white;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+.peu-pagina-index a {
+    max-width: 50%;
+}
+
+.peu-pagina-index a img {
+    max-width: 20%;
+    max-height:20%;
+
+}
+
+
+/* CATEGORIES */
+.main-conateiner-cat {
+    flex:1;
+    width: 70vw;
+    max-height: 70vh;
+    margin: auto;
+
+    /* centrem tot el contingut principal */
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+
+    /* Alinea en columna: capçalera, lema i peu de pàgina i els centrem*/
+    /* display: flex;
+    flex-direction: column; */
+    /* justify-content: space-between; */
+    /* text-align: center; */
+}
+
+
+.menu-cat ul li a  {
+    color: black;
+}
+
+
+/* Format del títol */
+.main-conateiner-cat h1 {
+    text-align: center;
+    margin: 2rem;
+}
+
+/* Contenidor de totes les targetes */
+.cards-cat {
+    margin: auto;  /*centrem el contenidor*/
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    column-gap: 2rem; /* Marge entre files*/
+}
+
+/* Contenidor d'una targeta */
+.card-cat {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0px;
+    flex-basis: calc(33.3% - 0.5rem); /* Cada pel·licula ocupa 1/3 de l'espai*/
+    background-color: white;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2); /*Definim una hombra */
+}
+
+/* Definim la mida de les imatges a la mida de la targeta  */
+.img-cat {
+    max-width: 100%;
+}
+
+
+
+/* DETALL */
+
+article {
+    width: 60%;
+    height: 80%;
+    margin: auto;
+    padding-top: 20px;
+    text-align: left;
+}
+
+.introduccio-detall {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.introduccio-detall h1 {
+
+    font-size: 30px;
+
+}
+.introduccio-detall  img {
+    width: 100%;
+    height: 100%;
+}
+
+.menu-detall {
+    /* interliniat del menú */
+    line-height: 1.5;
+}
+
+
+.main-section h2 {
+    border-bottom: 1px solid #CCC;
+}
+
+/* Per mostrar el texi i la imatge en una sola fila i dos columnes */
+.main-section section div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-section img {
+    /* margin-left: 5px;
+    margin-right: 5px;
+    width: 100%;
+    height: 100%; */
+
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+section img:hover {
+    cursor: zoom-in;
+}
+
+
+/* LINKS */
+
+table {
+    padding: 0;
+    border-spacing: 0;
+    width: 100%;
+    /* table-layout: fixed; */
+}
+tbody, th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+tbody tr:nth-child(even) {
+    background:rgba(119, 175, 223,0.4)
+}
+
+tbody tr:nth-child(odd) {
+    background: rgba(119, 175, 223,0.2);
+}
+
+th {
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+    border-bottom: 1px solid;
+}
+
+/* Fixem la mida de les columnes */
+td:nth-child(1) {
+    width: 20%;
+}
+
+td:nth-child(2) {
+    width: 30%;
+}
+
+td:nth-child(3) {
+    width: 50%;
+}
+
+
+/* Per seleccionar la primera colunna de la taula */
+tbody tr td:first-child{
+    font-weight: bold;
+}
+
+.sec-taula  h3 {
+    margin-top: 40px;
+    margin-bottom: 2px;
+    text-align: center;
+}
+
+.container-links{
+    margin: auto; /*per centrar el contenidor*/
+    width: 80%;
+}
+
+.iframe-container {
+    text-align: center;
+    max-width: 100%;
+    height: auto;
+}
+
+#linia_mov {
+    stroke: rgb(63,87,135);
+    stroke-width: 4;
+    max-width: 200px;
+    max-height: 20px;
+    animation: mou_linia 4s linear infinite alternate forwards;
+}
+
+@keyframes mou_linia {
+    0% {
+        transform: translate(calc(100vw - 200px), 10px)
+    }
+    100% {
+        transform: translate(0vw, 10px)
+    }
+}
+
+
+
+/* Definim la imatge de fons a l'índex */
+.shadowboard, .main-conateiner-index {
+    position: absolute;
+
+    height: 100%;
+    width: 100%;
+    background-image: url('../img/pexels-zukiman-mohamad-22804-1920px.webp');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    /* background-size: 100%; */
+    /* Alinea en columna: capçalera, lema i peu de pàgina i els centrem*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+
+
+    /* -webkit-clip-path: polygon(0% 15%, 0 0, 15% 0%, 85% 0%, 100% 0, 100% 15%, 66% 82%, 98% 72%, 85% 100%, 0 100%, 0 62%, 28% 86%); */
+
+
+
+}
+
+
+
+@media (max-width: 830px) {
+
+
+    main {
+        width: 95%; /*Fem que tot el contingut ocupi el 90% de tota la pantalla*/
+        font-size: 16px;
+        text-align: center;
+    }
+
+    /*Mofifiquem la mida dels títols*/
+    h1 {
+        font-size: 20px;
+    }
+
+    /*Mofifiquem la mida dels títols*/
+    h3 {
+        font-size: 16px;
+    }
+
+    .main-conateiner-index {
+        padding: 0px;
+    }
+
+    .shadowboard, .main-conateiner-index {
+        background-image: url('../img/pexels-zukiman-mohamad-22804-1280px.webp');
+     }
+
+    p.lema {
+        /* max-width: 100%; */
+        font-size: 45px;
+        margin-bottom: 0px;
+    }
+
+    .peu-pagina-index  {
+        /* flex-direction: column; */
+        /* height: 10vh; */
+    }
+
+    .introduccio-detall {
+        flex-direction: column;
+    }
+
+    /* Per mostrar el text i la imatge en una sola columna */
+    .main-section section div {
+        flex-direction: column;
+        flex: 1;
+        max-width: 400px;
+    }
+
+
+    .cards-cat {
+        flex-direction: column;
+        row-gap: 15px;
+    }
+
+    .iframe-container {
+        text-align: center;
+        /* max-width: 70%; */
+    }
+
+    iframe {
+        max-width: 100%;
+        height: 70%;
+    }
+
+   article  {
+    width: 90%;
+   }
+
+footer .menu-index ul {
+       padding-left: 0px;
+   }
+
+footer .menu-index ul li a  {
+    font-size: 10px;
+}
+
+
+}
+
+@media (max-width: 480px) {
+
+    .shadowboard, .main-conateiner-index {
+        background-image: url('../img/pexels-zukiman-mohamad-22804-830px.webp');
+     }
+
+     article  {
+        width: 70%;
+       }
+
+    footer .menu-index ul {
+        padding-left: 0px;
+    }
+
+    footer .menu-index ul li a  {
+      padding: 0px;
+       font-size: 10px;
+   }
+
+   .peu-pagina-index a {
+       flex: 1;
+   }
+
+   .peu-pagina-index nav {
+      flex: 0;
+   }
+
+
+}
+
+
+
+
+
+
+
+

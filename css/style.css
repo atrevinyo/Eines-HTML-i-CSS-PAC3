@@ -8,7 +8,7 @@
     src: local(''),
          url('../fonts/montserrat-v18-latin-200.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
          url('../fonts/montserrat-v18-latin-200.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-    font-display: swap;         
+           
   }
   /* montserrat-200italic - latin */
   @font-face {
@@ -131,7 +131,7 @@ header  {
 
     height: 100%;
     width: 100%;
-    background-image: url('../img/pexels-zukiman-mohamad-22804-1920px.webp');
+    background-image: url('../img/pexels-zukiman-mohamad-22804-1920px.avif');
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
@@ -457,7 +457,7 @@ tbody tr td:first-child{
     }
 
     .shadowboard, .main-conateiner-index {
-        background-image: url('../img/pexels-zukiman-mohamad-22804-1280px.webp');
+        background-image: url('../img/pexels-zukiman-mohamad-22804-1280px.avif');
      }
 
     p.lema {
@@ -516,7 +516,7 @@ footer .menu-index ul li a  {
 @media (max-width: 480px) {
 
     .shadowboard, .main-conateiner-index {
-        background-image: url('../img/pexels-zukiman-mohamad-22804-830px.webp');
+        background-image: url('../img/pexels-zukiman-mohamad-22804-830px.avif');
      }
 
      article  {
